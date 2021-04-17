@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@700&display=swap');
+@font-face  {
+    font-family: 'FonteLogo' ;
+    src: url("../_fonts/computer-font.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+
+body {
+    font-family: 'Luckiest Guy', cursive;
+    background-color:rgb(241, 231, 231);
+    color: #000000;
+}
+
+div#interface {
+    width: 960px;
+    background-color: #ffffff;
+    margin:  -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+     p {
+        text-align: justify;
+        text-indent: 50px;
+        }
+        a {
+            color: #8d762a;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        header#cabecalho img#icone {
+            position: absolute;
+            left: 920px;
+            top: 40px;
+        }
+        header#cabecalho {
+            border-bottom: 1px #8d762a solid;
+            height: 123px;
+            background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+        }
+        header#cabecalho h1 {
+            font-family: Arial,  sans-serif;
+            font-size: 30pt;
+            color: #8d762a;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0,.6px);
+            padding: 0px;
+            margin-bottom: 0px;        
+        }
+        header#cabecalho h2 {
+            font-family: 'Goldman', 'cursive';
+            color:  #8d762a;
+            font-size: 15pt;
+            padding: 0px;
+            margin-top: 0px;
+        }
+        /*Formatação de imagens com legendas*/
+    figure.foto-legenda {
+        position: relative; 
+        border: 8px solid  rgb(241, 231, 231); 
+        box-shadow:2px, 2px, 4px rgb(0,0,0);
+        }
+    figure.foto-legenda img {
+        width: 100%;
+        height: 100%;
+        }
+    figure.foto-legenda figcaption {
+        opacity: 0;
+        position: absolute;
+        top: 0px;
+        background-color: rgba(0,0,0,0.4);
+        color: #dde6e9;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        transition: 1s;
+        }
+    figure.foto-legenda:hover figcaption {
+        opacity: 1;
+        }
+
+        /* formatação do menu */
+
+        nav#menu {
+            display: block;
+        }
+        nav#menu a {
+            color: black;
+            text-decoration: none;
+        }
+        nav#menu a:hover{
+            color: white;
+            transition-duration: 1s;
+        }
+        nav#menu ul{
+            list-style: none;
+            text-transform: uppercase;
+            position: absolute;
+            top: -20px;
+            left:  500px;
+        }
+        nav#menu li{
+            border-radius: 5px;
+            display: inline-block;
+            background-color: rgba(228, 200, 108, 0.774);
+            padding: 10px;
+            margin: 2px;
+            transition-duration: 1s;
+                
+        }
+        nav#menu li:hover{
+            background-color: rgb(231, 176, 58);
+        }
+        nav#menu h1{
+            display: none;
+        }
+        section#corpo {
+            display: block; 
+            width: 530px;
+            float: left; 
+            border-right: 1px solid #8d762a ; 
+            padding-right: 15px ;         
+        }
+        article#noticia-principal h2 {
+            font-size: 14pt;
+            color: #000000;
+            background-color:  rgba(228, 200, 108, 0.774);
+            padding: 5px  0px 5px 10px;
+            margin-top: 10px 0px 10px 0px;
+        }
+        header#cabecalho-artigo h2 {
+            font-family: sans-serif;
+            font-size: 17pt;
+            color: #000000;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+        .direita{
+            text-align: right;
+            font-size: 10pt;
+            color: #000000;
+        }
+        header#cabecalho-artigo h3{
+            font-size: 12pt;
+            color: #ffffff;
+            background-color: #8d762a;
+            margin-top: 0px;
+        }
+        header#cabecalho-artigo h4{
+            font-size: 12pt;
+            color: #ffffff;
+            margin-top: 6px;
+            background-color: #8d762a;
+
+        }
+    
+        table#tabelaspec {
+            border: 1px solid #8d762a;
+            border-spacing: 0px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table#tabelaspec td{
+            border: 1px solid #8d762a;
+            padding: 8px;
+            text-align: center;
+        }
+        table#tabelaspec td.colunaesq{
+            color: #ffffff;
+            background-color: rgb(187, 142, 142);
+            font-weight: bold;
+        }
+        table#tabelaspec td.colunaddir{
+            background-color: rgb(241, 231, 231);
+        }
+        table#tabelaspec caption{
+            color: rgb(187, 142, 142);
+            font-size: 13pt;
+            font-weight: bold;
+            text-align: center;
+        }
+        table#tabelaspec caption span{
+            display: block;
+            float: right;
+            color: rgb(187, 142, 142);
+            font-weight: bold;
+            font-size: 8pt;
+            margin-top: 10px;
+        }
+
+        div #tv {
+            width: 100%;
+            min-width: 320px;
+            margin: auto;
+        }             
+
+        aside#lateral {
+            display: block;
+            width: 380px;
+            float: right;
+            background-color: rgb(241, 231, 231);
+            padding: 10px;
+            margin-top: 20px;
+            box-shadow: 2px 2px 2px rgb 0,0,0,0.5;
+        }
+        aside#lateral h2 {
+            font-family: sans-serif;
+            font-size: 15pt;
+            color: #000000;
+            background-color: rgb(187, 142, 142);
+            margin-top: 0px;
+            padding: 5px;
+        }
+        aside#lateral h3 {
+            font-family: sans-serif;
+            font-size: 12pt;
+            color: #ffffff;
+            background-color: rgb(187, 142, 142);
+            padding: 5px;
+            margin-top: 20px;
+
+        }
+        footer#rodape {
+            clear: both;
+            border-top: 1px solid #8d762a;  
+        }
+        footer#rodape p {
+            text-align: center;
+        }
+
+    
